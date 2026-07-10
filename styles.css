@@ -24,6 +24,10 @@ body {
   font-family: "Cinzel", Georgia, serif;
 }
 
+main {
+  overflow: hidden;
+}
+
 .home {
   width: min(100%, 1240px);
   min-height: 100vh;
@@ -59,6 +63,41 @@ h1 {
   filter: drop-shadow(0 2rem 3rem rgba(20, 2, 5, 0.34));
 }
 
+.overview {
+  padding: clamp(3.5rem, 8vw, 7rem) clamp(1rem, 4vw, 2rem);
+  background:
+    linear-gradient(180deg, rgba(20, 2, 5, 0.14), rgba(20, 2, 5, 0.46)),
+    var(--red-deep);
+  border-top: 1px solid rgba(255, 248, 239, 0.24);
+}
+
+.overview-inner {
+  width: min(100%, 920px);
+  margin: 0 auto;
+}
+
+.overview h2 {
+  margin: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: clamp(2.5rem, 7vw, 5.25rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-shadow: 0 0.08em 0 var(--ink);
+}
+
+.overview p {
+  margin: 0;
+  font-size: clamp(1rem, 1.75vw, 1.22rem);
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.overview p + p {
+  margin-top: 1.25rem;
+}
+
 @media (max-width: 700px) {
   .home {
     padding-top: 1.1rem;
@@ -74,5 +113,14 @@ h1 {
   .poster {
     width: min(100%, 82vh);
     max-height: 78vh;
+  }
+
+  .overview {
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .overview p {
+    line-height: 1.65;
   }
 }
