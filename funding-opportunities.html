@@ -30,8 +30,150 @@
       </details>
     </header>
 
-    <main class="placeholder-page">
-      <h1>Coming Soon</h1>
+    <main class="funding-page">
+      <section class="funding-hero" aria-labelledby="funding-title">
+        <h1 id="funding-title">Funding Opportunities</h1>
+        <p>
+          Support the Sainthood pilot and help carry the series into production.
+          Contributions are processed through PayPal checkout for
+          <strong>support@vac-app.com</strong>.
+        </p>
+      </section>
+
+      <section class="donation-levels" aria-label="Donation levels">
+        <article class="donation-card">
+          <div>
+            <h2>Special Thank You Credit on Each Episode</h2>
+            <p>
+              Choose a set contribution or enter your own amount. Supporters at
+              this level will be included in a special thank you credit on each
+              episode.
+            </p>
+          </div>
+          <div class="amount-grid" aria-label="Special thank you donation amounts">
+            <a
+              class="paypal-button"
+              href="https://www.paypal.com/donate?business=support%40vac-app.com&amp;currency_code=USD&amp;amount=5&amp;item_name=Sainthood%20Special%20Thank%20You%20Credit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >$5</a>
+            <a
+              class="paypal-button"
+              href="https://www.paypal.com/donate?business=support%40vac-app.com&amp;currency_code=USD&amp;amount=10&amp;item_name=Sainthood%20Special%20Thank%20You%20Credit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >$10</a>
+            <a
+              class="paypal-button"
+              href="https://www.paypal.com/donate?business=support%40vac-app.com&amp;currency_code=USD&amp;amount=25&amp;item_name=Sainthood%20Special%20Thank%20You%20Credit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >$25</a>
+            <a
+              class="paypal-button"
+              href="https://www.paypal.com/donate?business=support%40vac-app.com&amp;currency_code=USD&amp;amount=50&amp;item_name=Sainthood%20Special%20Thank%20You%20Credit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >$50</a>
+          </div>
+          <form
+            class="custom-donation"
+            action="https://www.paypal.com/donate"
+            method="get"
+            target="_blank"
+          >
+            <input type="hidden" name="business" value="support@vac-app.com" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input
+              type="hidden"
+              name="item_name"
+              value="Sainthood Special Thank You Credit"
+            />
+            <label for="special-custom">Write in amount</label>
+            <div class="custom-donation-row">
+              <input
+                id="special-custom"
+                name="amount"
+                type="number"
+                min="1"
+                step="1"
+                placeholder="Amount"
+                inputmode="decimal"
+                required
+              />
+              <button type="submit">Donate</button>
+            </div>
+          </form>
+        </article>
+
+        <article class="donation-card">
+          <div>
+            <h2>Producer Level Credit</h2>
+            <p>
+              Contributions from $1,000 to $5,000 are eligible for Producer
+              Level Credit.
+            </p>
+          </div>
+          <div class="amount-grid" aria-label="Producer level donation amounts">
+            <a
+              class="paypal-button"
+              href="https://www.paypal.com/donate?business=support%40vac-app.com&amp;currency_code=USD&amp;amount=1000&amp;item_name=Sainthood%20Producer%20Level%20Credit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >$1,000</a>
+            <a
+              class="paypal-button"
+              href="https://www.paypal.com/donate?business=support%40vac-app.com&amp;currency_code=USD&amp;amount=2500&amp;item_name=Sainthood%20Producer%20Level%20Credit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >$2,500</a>
+            <a
+              class="paypal-button"
+              href="https://www.paypal.com/donate?business=support%40vac-app.com&amp;currency_code=USD&amp;amount=5000&amp;item_name=Sainthood%20Producer%20Level%20Credit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >$5,000</a>
+          </div>
+        </article>
+
+        <article class="donation-card">
+          <div>
+            <h2>Executive Producer Level Credit</h2>
+            <p>
+              Contributions from $5,000 to $10,000 are eligible for Executive
+              Producer Level Credit.
+            </p>
+          </div>
+          <div class="amount-grid" aria-label="Executive producer donation amounts">
+            <a
+              class="paypal-button"
+              href="https://www.paypal.com/donate?business=support%40vac-app.com&amp;currency_code=USD&amp;amount=5000&amp;item_name=Sainthood%20Executive%20Producer%20Level%20Credit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >$5,000</a>
+            <a
+              class="paypal-button"
+              href="https://www.paypal.com/donate?business=support%40vac-app.com&amp;currency_code=USD&amp;amount=7500&amp;item_name=Sainthood%20Executive%20Producer%20Level%20Credit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >$7,500</a>
+            <a
+              class="paypal-button"
+              href="https://www.paypal.com/donate?business=support%40vac-app.com&amp;currency_code=USD&amp;amount=10000&amp;item_name=Sainthood%20Executive%20Producer%20Level%20Credit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >$10,000</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="supporter-note" aria-label="Supporter benefits">
+        <p>
+          All donations are eligible for signed merch upon release. An email will
+          be sent out to supporters for a private group live screening event
+          before the official streaming launch.
+        </p>
+      </section>
     </main>
   </body>
 </html>
