@@ -464,7 +464,8 @@ h1 {
 }
 
 .social-links .platform-link {
-  min-width: min(100%, 15rem);
+  flex: 1 1 18rem;
+  min-width: min(100%, 18rem);
   padding-inline: 1.35rem;
 }
 
