@@ -467,6 +467,8 @@ h1 {
   flex: 1 1 18rem;
   min-width: min(100%, 18rem);
   padding-inline: 1.35rem;
+  outline: 2px solid rgba(255, 248, 239, 0.72);
+  outline-offset: 3px;
 }
 
 .social-links span {
