@@ -366,39 +366,50 @@ h1 {
 
 .team-list {
   margin-top: clamp(2.5rem, 6vw, 4.5rem);
+  display: grid;
+  gap: clamp(3rem, 7vw, 5rem);
 }
 
 .team-profile {
   display: grid;
-  grid-template-columns: minmax(12rem, 0.62fr) minmax(0, 1fr);
-  gap: clamp(1.25rem, 4vw, 3rem);
+  grid-template-columns: minmax(13rem, 0.44fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
   align-items: center;
+  padding-block: clamp(1rem, 3vw, 2rem);
 }
 
-.team-logo-frame {
-  min-height: clamp(14rem, 28vw, 22rem);
+.team-profile:nth-child(even) .team-media {
+  order: 2;
+}
+
+.team-profile:nth-child(even) .team-bio {
+  order: 1;
+}
+
+.team-media {
+  width: min(100%, 20rem);
+  aspect-ratio: 1;
   display: grid;
   place-items: center;
+  justify-self: center;
   background: rgba(20, 2, 5, 0.48);
   border: 1px solid rgba(255, 248, 239, 0.24);
   box-shadow: 0 1.2rem 2.5rem rgba(20, 2, 5, 0.24);
 }
 
 .team-logo {
-  width: min(72%, 18rem);
+  width: min(72%, 15rem);
   height: auto;
   display: block;
   filter: drop-shadow(0 1rem 1.5rem rgba(20, 2, 5, 0.45));
 }
 
-.team-copy {
-  padding: clamp(1.15rem, 3vw, 2rem);
-  background: rgba(20, 2, 5, 0.36);
-  border: 1px solid rgba(255, 248, 239, 0.22);
+.team-bio {
+  max-width: 700px;
 }
 
 .team-role,
-.team-copy p,
+.team-bio p,
 .social-links a,
 .social-links span {
   font-family: "Oswald", Arial, sans-serif;
@@ -412,7 +423,7 @@ h1 {
   font-size: clamp(0.95rem, 1.5vw, 1.1rem);
 }
 
-.team-copy h2 {
+.team-bio h2 {
   margin: 0;
   font-family: "Bebas Neue", Impact, sans-serif;
   font-size: clamp(3rem, 8vw, 6rem);
@@ -423,10 +434,12 @@ h1 {
   text-shadow: 0 0.08em 0 var(--ink);
 }
 
-.team-copy p:not(.team-role) {
+.team-statement {
   margin: 1rem 0 0;
   font-size: clamp(1rem, 1.7vw, 1.22rem);
   line-height: 1.7;
+  text-transform: none;
+  text-wrap: pretty;
 }
 
 .social-links {
@@ -544,10 +557,18 @@ h1 {
 
   .team-profile {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding-block: 0;
   }
 
-  .team-logo-frame {
-    min-height: 13rem;
+  .team-profile:nth-child(even) .team-media,
+  .team-profile:nth-child(even) .team-bio {
+    order: initial;
+  }
+
+  .team-media {
+    width: min(100%, 16rem);
+    justify-self: start;
   }
 
   .team-logo {
