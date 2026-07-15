@@ -463,6 +463,11 @@ h1 {
   text-decoration: none;
 }
 
+.social-links .platform-link {
+  min-width: min(100%, 15rem);
+  padding-inline: 1.35rem;
+}
+
 .social-links span {
   opacity: 0.56;
   cursor: not-allowed;
