@@ -20,5 +20,5 @@ your-github-username.github.io
 This site includes a `CNAME` file for:
 
 ```txt
-sainthoodthefilm.vac-app.com
+sainthoodtheseries.vac-app.com
 ```
