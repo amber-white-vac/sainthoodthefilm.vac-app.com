@@ -159,6 +159,7 @@ h1 {
   letter-spacing: 0.01em;
   font-size: clamp(1rem, 1.75vw, 1.22rem);
   line-height: 1.75;
+  text-align: center;
   text-wrap: pretty;
 }
 
