@@ -474,12 +474,20 @@ h1 {
   align-items: start;
 }
 
+.cast-profile:nth-child(even) .team-media,
+.cast-profile:nth-child(even) .team-bio {
+  order: initial;
+}
+
 .cast-profile .team-bio {
   width: 100%;
+  max-width: 700px;
+  justify-self: start;
 }
 
 .cast-media {
   width: min(100%, 20rem);
+  justify-self: start;
   overflow: hidden;
 }
 
