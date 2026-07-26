@@ -133,6 +133,10 @@ h1 {
   text-wrap: pretty;
 }
 
+.logline-label {
+  color: #000;
+}
+
 .poster {
   display: block;
   width: min(100%, 72vh, 760px);
@@ -488,6 +492,7 @@ h1 {
 .cast-media {
   width: min(100%, 20rem);
   justify-self: start;
+  border: 0.28rem solid #000;
   overflow: hidden;
 }
 
@@ -501,9 +506,56 @@ h1 {
 
 .cast-placeholder {
   padding: 1rem;
+  border-color: #000;
   background:
     linear-gradient(135deg, rgba(20, 2, 5, 0.6), rgba(20, 2, 5, 0.3)),
     rgba(20, 2, 5, 0.48);
+}
+
+.stunts-page {
+  min-height: 100vh;
+  padding: clamp(5rem, 10vw, 7.5rem) clamp(1rem, 3vw, 2rem) clamp(3rem, 7vw, 6rem);
+}
+
+.stunts-hero,
+.video-embed {
+  width: min(100%, 860px);
+  margin: 0 auto;
+}
+
+.stunts-hero {
+  text-align: center;
+}
+
+.stunts-hero h1 {
+  max-width: 11ch;
+  margin-inline: auto;
+}
+
+.stunts-hero p {
+  max-width: 760px;
+  margin: 1rem auto 0;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+.video-embed {
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+  display: grid;
+  place-items: center;
+}
+
+.instagram-media {
+  width: min(100%, 540px) !important;
+  min-width: 0 !important;
+  max-width: 540px !important;
+  background: var(--ink) !important;
+  border: 0.28rem solid #000 !important;
+  box-shadow: 0 1.2rem 2.5rem rgba(20, 2, 5, 0.28) !important;
 }
 
 .cast-placeholder span {
@@ -660,6 +712,23 @@ h1 {
 
   .cast-media {
     width: min(100%, 16rem);
+  }
+
+  .stunts-page {
+    padding-top: 4.5rem;
+  }
+
+  .stunts-hero {
+    text-align: left;
+  }
+
+  .stunts-hero h1 {
+    margin-inline: 0;
+    text-align: left;
+  }
+
+  .stunts-hero p {
+    margin-left: 0;
   }
 
   .team-logo {
