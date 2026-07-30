@@ -736,3 +736,46 @@ h1 {
     width: min(66%, 15rem);
   }
 }
+
+/* ---------- STUNT PAGE ---------- */
+
+.stunt-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:48px;
+    max-width:1400px;
+    margin:0 auto 80px;
+    padding:0 40px;
+    align-items:start;
+}
+
+.stunt-profile{
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+}
+
+.stunt-profile .team-media{
+    margin-bottom:24px;
+}
+
+.stunt-profile .cast-headshot{
+    width:100%;
+    max-width:420px;
+    display:block;
+    margin:0 auto;
+}
+
+.stunt-profile .team-bio{
+    width:100%;
+}
+
+@media (max-width:900px){
+
+    .stunt-grid{
+        grid-template-columns:1fr;
+        gap:64px;
+        padding:0 20px;
+    }
+
+}
