@@ -739,8 +739,14 @@ h1 {
 
 /* ==========================================================
    STUNTS & FIGHT CHOREOGRAPHY
-   Uses the shared Team page layout.
    ========================================================== */
+
+/*
+    The Stunts page intentionally shares the same layout
+    system as the Cast and Production pages.
+
+    Only page-specific rules belong here.
+*/
 
 .stunt-grid{
     width:min(100%,1060px);
@@ -749,7 +755,7 @@ h1 {
     gap:clamp(3rem,7vw,5rem);
 }
 
-/* keep alternating layout */
+/* Alternate every other profile */
 
 .stunt-profile.reverse .team-media{
     order:2;
