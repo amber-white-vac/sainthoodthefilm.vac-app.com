@@ -739,29 +739,17 @@ h1 {
 
 /* ==========================================================
    STUNTS & FIGHT CHOREOGRAPHY
+   Uses the shared Team page layout.
    ========================================================== */
 
 .stunt-grid{
-    max-width:1400px;
-    margin:0 auto;
-    padding:0 40px 80px;
-}
-
-/* Individual profile */
-
-.stunt-profile{
+    width:min(100%,1060px);
+    margin:clamp(2.5rem,6vw,4.5rem) auto 0;
     display:grid;
-    grid-template-columns:420px 1fr;
-    gap:56px;
-    align-items:center;
-    margin-bottom:90px;
+    gap:clamp(3rem,7vw,5rem);
 }
 
-/* Alternate every other profile */
-
-.stunt-profile.reverse{
-    grid-template-columns:1fr 420px;
-}
+/* keep alternating layout */
 
 .stunt-profile.reverse .team-media{
     order:2;
@@ -771,55 +759,17 @@ h1 {
     order:1;
 }
 
-/* Image */
-
-.stunt-profile .team-media{
-    margin:0;
-}
-
-.stunt-profile .cast-headshot{
-    width:100%;
-    max-width:420px;
-    display:block;
-    margin:0 auto;
-}
-
-/* Bio */
-
-.stunt-profile .team-bio{
-    width:100%;
-}
-
-.stunt-profile .team-role{
-    margin-bottom:18px;
-}
-
-.stunt-profile .social-links{
-    margin-top:24px;
-}
-
 /* Mobile */
 
-@media (max-width:900px){
+@media (max-width:700px){
 
     .stunt-grid{
-        padding:0 20px 60px;
-    }
-
-    .stunt-profile,
-    .stunt-profile.reverse{
-        grid-template-columns:1fr;
-        gap:28px;
-        margin-bottom:70px;
+        gap:2.5rem;
     }
 
     .stunt-profile.reverse .team-media,
     .stunt-profile.reverse .team-bio{
         order:initial;
-    }
-
-    .stunt-profile .cast-headshot{
-        max-width:380px;
     }
 
 }
