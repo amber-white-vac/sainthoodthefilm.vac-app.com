@@ -403,11 +403,11 @@ h1 {
 }
 
 .team-profile:nth-child(even) .team-media {
-  order: 2;
+    order:2;
 }
 
 .team-profile:nth-child(even) .team-bio {
-  order: 1;
+    order:1;
 }
 
 .team-media {
