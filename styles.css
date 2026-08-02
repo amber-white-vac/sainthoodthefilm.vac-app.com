@@ -436,9 +436,7 @@ h1 {
     min-width: 0;
     justify-self: stretch;
 }
-.team-bio h2 {
-    overflow-wrap: break-word;
-}
+
 
 .team-role,
 .team-bio p,
