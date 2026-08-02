@@ -10,14 +10,14 @@
   </url>
 
   <url>
-    <loc>https://sainthoodthefilm.vac-app.com/about.html</loc>
+    <loc>https://sainthoodthefilm.vac-app.com/index.html</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://sainthoodthefilm.vac-app.com/story.html</loc>
+    <loc>https://sainthoodthefilm.vac-app.com/index.html#series-overview.html</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -31,31 +31,24 @@
   </url>
 
   <url>
-    <loc>https://sainthoodthefilm.vac-app.com/stunts.html</loc>
+    <loc>https://sainthoodthefilm.vac-app.com/crew-production-team.html</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+  
   <url>
-    <loc>https://sainthoodthefilm.vac-app.com/production.html</loc>
+    <loc>https://sainthoodthefilm.vac-app.com/stunts-fight-choreography.html</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+  
   <url>
-    <loc>https://sainthoodthefilm.vac-app.com/crew.html</loc>
+    <loc>https://sainthoodthefilm.vac-app.com/funding-opportunities.html</loc>
     <lastmod>2026-08-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://sainthoodthefilm.vac-app.com/contact.html</loc>
-    <lastmod>2026-08-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
   </url>
 
 </urlset>
