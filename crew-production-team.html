@@ -11,47 +11,28 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500;700&family=Oswald:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      :root {
-        --sainthood-red: #c90010;
-        --red-deep: #94000b;
-        --paper: #fff8ef;
-        --ink: #140205;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: grid;
-        place-items: center;
-        background:
-          radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.13), transparent 24rem),
-          linear-gradient(180deg, #d00012 0%, var(--sainthood-red) 46%, var(--red-deep) 100%);
-        color: var(--paper);
-      }
-
-      h1 {
-        margin: 0;
-        padding: 1rem;
-        font-family: "Bebas Neue", Impact, sans-serif;
-        font-size: clamp(3rem, 12vw, 9rem);
-        font-weight: 400;
-        line-height: 0.9;
-        letter-spacing: 0.08em;
-        text-align: center;
-        text-transform: uppercase;
-        text-shadow:
-          0 0.08em 0 var(--ink),
-          0 0.18em 1.1em rgba(20, 2, 5, 0.45);
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
+    <header class="site-header" aria-label="Site navigation">
+      <details class="menu">
+        <summary class="menu-toggle" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+        <nav class="menu-panel" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="index.html#series-overview">Story</a>
+          <a href="cast.html">Cast</a>
+          <a href="crew-production-team.html">Crew &amp; Production Team</a>
+          <a href="stunts-fight-choreography.html">Stunts &amp; Fight Choreography</a>
+          <a href="funding-opportunities.html">Funding Opportunities</a>
+        </nav>
+      </details>
+    </header>
+
+    <main class="placeholder-page">
       <h1>Coming Soon</h1>
     </main>
   </body>
