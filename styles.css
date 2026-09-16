@@ -214,6 +214,41 @@ h1 {
   outline-offset: 3px;
 }
 
+.script-request {
+  width: min(100%, 920px);
+  margin: clamp(2.5rem, 6vw, 4.5rem) auto 0;
+  padding: 0 clamp(1rem, 3vw, 2rem) clamp(2rem, 5vw, 3rem);
+  display: grid;
+  place-items: center;
+}
+
+.script-request a {
+  width: fit-content;
+  max-width: 100%;
+  min-height: 3rem;
+  padding: 0.95rem 1.25rem;
+  display: inline-grid;
+  place-items: center;
+  background: var(--ink);
+  border: 1px solid rgba(255, 248, 239, 0.42);
+  color: var(--paper);
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: clamp(1.02rem, 2vw, 1.18rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 1rem 2rem rgba(20, 2, 5, 0.28);
+}
+
+.script-request a:hover,
+.script-request a:focus-visible {
+  background: #000;
+  outline: 2px solid rgba(255, 248, 239, 0.72);
+  outline-offset: 3px;
+}
+
 .placeholder-page {
   min-height: 100vh;
   padding: clamp(5rem, 12vw, 8rem) clamp(1rem, 3vw, 2rem);
